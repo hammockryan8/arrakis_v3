@@ -29,13 +29,8 @@ public class BondsHandlerTest
     private BondHandler cut;
 
     @Test
-    void printAllBonds(){
+    void getBondsType(){
 
-        List<Bond> bonds = cut.getAllBonds();
-
-        for(Bond b : bonds){
-            System.out.println(b.getId());
-        }
     }
 
 
