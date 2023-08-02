@@ -62,4 +62,20 @@ public class BondsController {
 
         return response;
     }
+
+    public List<Bond> getBondsDueToMature(){
+        
+        return bondService.getAllBonds();
+    }
+
+    public List<Bond> getBondsNotSettled(){
+
+        return bondService.getAllBonds();
+    }
+
+    public List<Bond> getBondsMatured(){
+
+        return bondService.getAllBonds();
+    }
+
 }
