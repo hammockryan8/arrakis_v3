@@ -3,14 +3,14 @@ package com.db.grad.javaapi.controller;
 import com.db.grad.javaapi.exception.ResourceNotFoundException;
 import com.db.grad.javaapi.model.Bond;
 import com.db.grad.javaapi.service.BondHandler;
+import org.apache.commons.lang3.time.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.time.LocalDate;
+import java.util.*;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -64,7 +64,9 @@ public class BondsController {
     }
 
     public List<Bond> getBondsDueToMature(){
+        LocalDate today = java.time.LocalDate.now();
         
+
         return bondService.getAllBonds();
     }
 
