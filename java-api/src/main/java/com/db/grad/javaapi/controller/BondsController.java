@@ -65,7 +65,7 @@ public class BondsController {
 
     public List<Bond> getBondsDueToMature(){
         LocalDate today = java.time.LocalDate.now();
-        
+
 
         return bondService.getAllBonds();
     }
