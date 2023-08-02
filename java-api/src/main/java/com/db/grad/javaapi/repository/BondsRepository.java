@@ -12,4 +12,7 @@ public interface BondsRepository extends JpaRepository<Bond, Long>
 {
     @Query(nativeQuery = true, value = "select * from bonds where cusip = :cusip")
     List<Bond> findByCusip(Bond cusip);
+
+    @Query(nativeQuery = true, value = "select * from bonds where id = :id")
+    Bond findById(long id);
 }

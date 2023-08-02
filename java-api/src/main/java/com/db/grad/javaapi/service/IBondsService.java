@@ -13,7 +13,7 @@ public interface IBondsService
 
     public long getNoOfBonds();
 
-    public boolean removeBond(long uniqueId);
+    //public boolean removeBond(long uniqueId);
 
     public Bond getBondById(long uniqueId);
 

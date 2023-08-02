@@ -37,25 +37,25 @@ public class BondHandler implements IBondsService
         return itsBondsRepo.count();
     }
 
-    @Override
-    public boolean removeBond(long uniqueId)
-    {
-        boolean result = false;
-
-        Optional<Bond> theBond = itsBondsRepo.findById(uniqueId);
-        if(theBond.isPresent())
-        {
-            itsBondsRepo.delete(theBond.get());
-            result = true;
-        }
-
-        return  result;
-    }
+    //@Override
+//    public boolean removeBond(long uniqueId)
+//    {
+//        boolean result = false;
+//
+//        Optional<Bond> theBond = itsBondsRepo.findById(uniqueId);
+//        if(theBond.isPresent())
+//        {
+//            itsBondsRepo.delete(theBond.get());
+//            result = true;
+//        }
+//
+//        return  result;
+//    }
 
     @Override
     public Bond getBondById(long uniqueId)
     {
-        return itsBondsRepo.findById(uniqueId).get();
+        return itsBondsRepo.findById(uniqueId);
     }
 
 //    @Override

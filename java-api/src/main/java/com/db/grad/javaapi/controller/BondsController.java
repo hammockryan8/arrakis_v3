@@ -49,19 +49,19 @@ public class BondsController {
         return ResponseEntity.ok(updatedBonds);
     }
 
-    @DeleteMapping("/Bonds/{id}")
-    public Map < String, Boolean > deleteBond(@PathVariable(value = "id") Long id)
-    throws ResourceNotFoundException {
-    	boolean removed = bondService.removeBond(id);
-
-        Map < String, Boolean > response = new HashMap <>();
-        if( removed )
-            response.put("deleted", Boolean.TRUE);
-        else
-            response.put("deleted", Boolean.FALSE);
-
-        return response;
-    }
+//    @DeleteMapping("/Bonds/{id}")
+//    public Map < String, Boolean > deleteBond(@PathVariable(value = "id") Long id)
+//    throws ResourceNotFoundException {
+//    	boolean removed = bondService.removeBond(id);
+//
+//        Map < String, Boolean > response = new HashMap <>();
+//        if( removed )
+//            response.put("deleted", Boolean.TRUE);
+//        else
+//            response.put("deleted", Boolean.FALSE);
+//
+//        return response;
+//    }
 
     public List<Bond> getBondsDueToMature(){
         LocalDate today = java.time.LocalDate.now();
