@@ -86,6 +86,7 @@ INSERT INTO book_users (book_id, users_id) VALUES (1, 1);
 INSERT INTO book_users (book_id, users_id) VALUES (2, 2);
 INSERT INTO book_users (book_id, users_id) VALUES (3, 3);
 INSERT INTO book_users (book_id, users_id) VALUES (2, 3);
+INSERT INTO book_users (book_id, users_id) VALUES (4, 4);
 INSERT INTO book_users (book_id, users_id) VALUES (5, 5);
 INSERT INTO book_users (book_id, users_id) VALUES (4, 6);
 INSERT INTO book_users (book_id, users_id) VALUES (4, 7);
