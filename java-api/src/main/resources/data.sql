@@ -31,4 +31,4 @@ INSERT INTO bonds(trade_type,trade_currency,quantity,trade_settlement_date,trade
 INSERT INTO user (name, email, role) VALUES ('BNPParibasIssu 4,37% Microsoft Corp (USD)', 'hammerryan@gmail.com', 'software engineer');
 INSERT INTO book (name) VALUES ('Trading_book_1');
 INSERT INTO book_user (book_id, user_id) VALUES (1,1);
-
+INSERT INTO trades (book_id ,security_id,counterparty_id,currency,status,quantity,unit_price,buy_sell,trade_date,settlement_date) VALUES (1, 1,1, 'USD', 'active', 50, 90, 'buy', '2021-05-13', '2021-08-04' );
