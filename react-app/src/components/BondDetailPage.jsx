@@ -55,7 +55,7 @@ TradeCurrency: "GBP", Buysell: 'buy', TradeDate: '04/02/2021', SettlementDate: '
                 </tr>
             )}
         </table>
-        <div style={{marginLeft: "50%", backgroundColor:"#5885AF"}}><h1>Transations by ISIN - {params["date"]}</h1></div>
+        <div style={{marginLeft: "40%", backgroundColor:"#5885AF", marginRight: "23%"}}><h1>Transations by ISIN - {params["date"]}</h1></div>
         <table style = {TableStyle}>
           <tr>
             <th style = {THStyle}> ISIN </th>
@@ -85,6 +85,7 @@ TradeCurrency: "GBP", Buysell: 'buy', TradeDate: '04/02/2021', SettlementDate: '
                 </tr>
             )}
         </table>
+        <button> Home Page </button>
 
 
       </>
