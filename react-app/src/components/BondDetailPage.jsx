@@ -85,7 +85,7 @@ TradeCurrency: "GBP", Buysell: 'buy', TradeDate: '04/02/2021', SettlementDate: '
                 </tr>
             )}
         </table>
-        <button> Home Page </button>
+        <button type = 'button' onclick = "window.location.href='./components/HomePage' ; "> Home Page </button>
 
 
       </>
