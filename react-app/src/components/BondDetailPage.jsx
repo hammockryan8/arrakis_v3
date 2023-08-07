@@ -59,13 +59,14 @@ const BondDetailPage = (props) => {
     return res;
   }
 
-  /* const Button = {
-  /*background-color: 'black',
+  const ButtonStyle = {
+  backgroundColor: 'black',
   color: 'white',
-  font-size: '20px',
-  border-radius: '5px',
-  cursor: 'pointer'
-  } */
+  fontSize: '20px',
+  borderRadius: '5px',
+  cursor: 'pointer',
+  marginLeft: '10%'
+  }
 
   return (<>
         <div style={{marginTop: '5%', marginLeft: "5%"}}>
@@ -127,7 +128,7 @@ const BondDetailPage = (props) => {
             )}
         </table>
 
-      <Button onClick={handleHome} style={{ color: "white", background: "silver" }}>Home Page</Button>
+      <Button onClick={handleHome} style={ButtonStyle}>Home Page</Button>
 
       </>
   )
