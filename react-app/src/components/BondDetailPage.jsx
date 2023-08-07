@@ -26,6 +26,15 @@ TradeCurrency: "GBP", Buysell: 'buy', TradeDate: '04/02/2021', SettlementDate: '
         textAlign: "center"
     }
 
+  const Button = styled.button`
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  padding: 10px 60px;
+  border-radius: 5px;
+  margin: 10px 0px;
+  cursor: pointer;
+`;
   return (<>
         <div style={{marginTop: '5%', marginLeft: "5%"}}>
           <BondCard bonds= {["test", "test2"]}/>
@@ -85,8 +94,13 @@ TradeCurrency: "GBP", Buysell: 'buy', TradeDate: '04/02/2021', SettlementDate: '
                 </tr>
             )}
         </table>
+<<<<<<< Updated upstream
         <button type = 'button' onclick = "window.location.href='./components/HomePage' ; "> Home Page </button>
 
+=======
+
+      <Button onClick={handleHome}>Home Page</Button>
+>>>>>>> Stashed changes
 
       </>
   )
