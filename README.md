@@ -1,15 +1,23 @@
-# arrakis_v3
-# Dogs APIs
+# Coding Challenge 
 
-![dogs](dogs_api.jpg)
+## Team 8 
 
-In this example, we are creating crud operations and exposing them through REST APIs so that UI clients can invoke these operations. The demo operations enable the clients to modify the dogs records in database.
+### Caleb Kathman, Elsa Sjogren, Mohammad Asghar, Ryan Hammock, Zeineb Ouerghi
 
-The purpose of this demo is to showcase the nuts and bolts, which make this interaction possible, not covering the complexity in business logic involved in real world applications.
+
+#### Problem Statement
+We want to enable Operations to have the diagnostic tools to be able to monitor inaccuracies in data that may lead to redemptions not taking place.
+Currently, the process of redeeming bonds is highly dependent on the quality of Instrument data and the timing of system processes. Hence, Operations are monitoring books manually, and there is a reliance on tools such as email and spreadsheets.
+
+#### Task
+This will be to produce a tool that aids Operations in identifying issues with bonds post maturity that are still on the books, the tooling should provide visibility on the trades linked to those bonds which may help identify failing trades, mis-booked trades, timing issues etc.
+
+
+
+
 
 
 # Let's get the back-end running!
-
 
 ## Prerequisites
 
